@@ -1,0 +1,4 @@
+npm install --save react react-dom react-router-dom
+
+npm install --save-dev @babel/cli@7.1.0 @babel/core@7.1.0 @babel/preset-env@7.1.0 @babel/preset-react@7.0.0 autoprefixer babel-loader clean-webpack-plugin css-loader file-loader html-webpack-plugin mini-css-extract-plugin node-sass postcss-loader prerender-loader sass-loader@7.1.0 style-loader uglifyjs-webpack-plugin webpack webpack-cli webpack-dev-server
+
