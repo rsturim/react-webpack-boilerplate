@@ -1,7 +1,9 @@
 {
     "name": "my-react-boilerplate",
+    "author": "Rich Sturim",
+    "license": "MIT",
     "version": "1.0.0",
-    "description": "",
+    "description": "Simple React Boilerplate",
     "main": "index.js",
     "scripts": {
         "start": "webpack-dev-server --hot --inline --config webpack.dev.js",
@@ -19,12 +21,11 @@
             "git add"
         ]
     },
-    "jest": {
-        "setupTestFrameworkScriptFile": "./src/polyfills/enzyme.setup.js",
-        "testURL": "http://localhost"
+    "dependencies": {
+        "react": "^16.5.2",
+        "react-dom": "^16.5.2",
+        "react-router-dom": "^4.3.1"
     },
-    "author": "",
-    "license": "ISC",
     "devDependencies": {
         "@babel/cli": "^7.1.0",
         "@babel/core": "^7.1.0",
@@ -65,10 +66,9 @@
         "webpack-merge": "^4.1.2",
         "webpack-notifier": "^1.6.0"
     },
-    "dependencies": {
-        "react": "^16.5.2",
-        "react-dom": "^16.5.2",
-        "react-router-dom": "^4.3.1"
+    "jest": {
+        "setupTestFrameworkScriptFile": "./src/polyfills/enzyme.setup.js",
+        "testURL": "http://localhost"
     },
     "browserslist": {
         "development": [

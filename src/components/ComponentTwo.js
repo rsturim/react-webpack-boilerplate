@@ -25,11 +25,23 @@ class ComponentTwo extends Component {
                                 Simple React Boilerplate
                             </h1>
                             <h3 className="display-5">Component 2</h3>
+                            <ul className="nav nav-pills mt-4 mb-4">
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/">
+                                        one
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link active" href="#">
+                                        two
+                                    </a>
+                                </li>
+                            </ul>
+
                             <p className="lead">
-                                Nulla lacus justo semper commodo nullam etiam,
-                                porta ipsum nonummy ut nunc interdum, tincidunt
-                                mi urna cras, et et at aenean mollis morbi odio,
-                                ornare eu sagittis.
+                                Lorem ipsum dolor sit amet, debitis integer
+                                integer viverra, dui mauris feugiat cras
+                                facilisis.
                             </p>
                             <hr className="my-4" />
                             <p>
@@ -42,11 +54,6 @@ class ComponentTwo extends Component {
                                 bibendum pede, justo imperdiet nullam magna,
                                 faucibus euismod dolor.
                             </p>
-                            <ul>
-                                <li>
-                                    <Link to="/">Component 1</Link>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
