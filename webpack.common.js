@@ -3,43 +3,47 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
 
 const path = require('path');
+const DIST = 'dist';
+const DIST_PATH = path.join(__dirname, DIST);
 
 module.exports = {
     entry: {
-        main: './src/index.js'
+        main: './src/index.js',
     },
     output: {
-        filename: '[name].[hash].js',
-        path: path.resolve('./dist')
+        filename: '[name].[hash:8].js',
+        path: DIST_PATH,
+        publicPath: '/',
     },
+    target: 'web',
     module: {
         rules: [
             {
                 test: /\.js$/,
                 exclude: ['node_modules'],
-                use: [{ loader: 'babel-loader' }]
+                use: [{ loader: 'babel-loader' }],
             },
             {
                 test: /\.s(a|c)ss$/,
                 use: [
                     {
-                        loader: 'style-loader'
+                        loader: 'style-loader',
                     },
                     {
-                        loader: 'css-loader'
+                        loader: 'css-loader',
                     },
                     {
-                        loader: 'sass-loader'
-                    }
-                ]
-            }
-        ]
+                        loader: 'sass-loader',
+                    },
+                ],
+            },
+        ],
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: 'index.html'
+            template: 'index.html',
         }),
         new CleanWebpackPlugin(['dist']),
-        new WebpackNotifierPlugin()
-    ]
+        new WebpackNotifierPlugin(),
+    ],
 };
