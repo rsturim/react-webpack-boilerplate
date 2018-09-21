@@ -1,5 +1,7 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const WebpackNotifierPlugin = require('webpack-notifier');
+
 const path = require('path');
 
 module.exports = {
@@ -37,6 +39,7 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: 'index.html'
         }),
-        new CleanWebpackPlugin(['dist'])
+        new CleanWebpackPlugin(['dist']),
+        new WebpackNotifierPlugin()
     ]
 };
