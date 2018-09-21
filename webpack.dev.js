@@ -12,6 +12,9 @@ const DIST_PATH = path.join(__dirname, DIST);
 module.exports = merge(common, {
     mode: 'development',
     devServer: {
+        stats: {
+            colors: true,
+        },
         host: 'localhost',
         hot: true,
         port: 3000,

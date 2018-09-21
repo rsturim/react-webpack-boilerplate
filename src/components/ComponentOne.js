@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
-class FirstComponent extends Component {
+import { Link } from 'react-router-dom';
+
+class ComponentOne extends Component {
     constructor(props) {
         super(props);
     }
@@ -23,11 +24,10 @@ class FirstComponent extends Component {
                             <h1 className="display-4">
                                 Simple React Boilerplate
                             </h1>
+                            <h3 className="display-5">Component 1</h3>
                             <p className="lead">
                                 Nulla lacus justo semper commodo nullam etiam,
-                                porta ipsum nonummy ut nunc interdum, tincidunt
-                                mi urna cras, et et at aenean mollis morbi odio,
-                                ornare eu sagittis.
+                                porta ipsum nonummy.
                             </p>
                             <hr className="my-4" />
                             <p>
@@ -40,13 +40,11 @@ class FirstComponent extends Component {
                                 bibendum pede, justo imperdiet nullam magna,
                                 faucibus euismod dolor.
                             </p>
-                            <a
-                                className="btn btn-primary btn-lg"
-                                href="#"
-                                role="button"
-                            >
-                                Go
-                            </a>
+                            <ul>
+                                <li>
+                                    <Link to="/two">Component 2</Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -55,6 +53,6 @@ class FirstComponent extends Component {
     }
 }
 
-FirstComponent.propTypes = {};
+ComponentOne.propTypes = {};
 
-export default FirstComponent;
+export default ComponentOne;
