@@ -3,18 +3,25 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "directories": {
-        "test": "test"
-    },
     "scripts": {
-        "build": "webpack --config webpack.prod.js",
         "start": "webpack-dev-server --config webpack.dev.js",
-        "test": "jest ./test",
+        "build": "webpack --config webpack.prod.js",
+        "test": "jest",
+        "test-watch": "jest --watch",
         "eslint": "eslint --ext .jsx,.js src/;exit 0",
-        "eslint-fix": "eslint --fix --ext .jsx,.js src/;exit 0"
+        "eslint-fix": "eslint --fix --ext .jsx,.js src/;exit 0",
+        "pretty": "prettier --write 'src/**/*.js'",
+        "precommit": "lint-staged && npm test"
+    },
+    "lint-staged": {
+        "*.js": [
+            "npm run pretty",
+            "git add"
+        ]
     },
     "jest": {
-        "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
+        "setupTestFrameworkScriptFile": "./src/polyfills/enzyme.setup.js",
+        "testURL": "http://localhost"
     },
     "author": "",
     "license": "ISC",
@@ -41,7 +48,9 @@
         "eslint-plugin-react": "^7.11.1",
         "file-loader": "^2.0.0",
         "html-webpack-plugin": "^3.2.0",
+        "husky": "^0.14.3",
         "jest": "^22.4.3",
+        "lint-staged": "^7.3.0",
         "mini-css-extract-plugin": "^0.4.3",
         "node-sass": "^4.9.3",
         "postcss-loader": "^3.0.0",
@@ -60,5 +69,18 @@
         "react": "^16.5.2",
         "react-dom": "^16.5.2",
         "react-router-dom": "^4.3.1"
+    },
+    "browserslist": {
+        "development": [
+            "last 2 chrome versions",
+            "last 2 firefox versions",
+            "last 2 edge versions"
+        ],
+        "production": [
+            ">1%",
+            "last 4 versions",
+            "Firefox ESR",
+            "not ie < 11"
+        ]
     }
 }
