@@ -2,20 +2,20 @@
 
 ## You're gonna need a simple react boilerplate to begin your next project.
 
-A very simple ReactJS project boilerplate. This includes a good range of tooling and features found in a basic UI project.
-
-It uses Webpack, Babel, React Router and SCSS.
+A solid yet simple ReactJS boilerplate. This includes repo offers a perfect starting point for tooling a basic UI project.
 
 Inspired by [`simple-react-boilerplate`](https://github.com/AbeEstrada/simple-react-boilerplate).
 
 ## Features
 
+-   react 16
+-   react-router
 -   babel 7
--   eslint
--   husky (pre-commit hooks)
+-   webpack 4
 -   jest/enzyme
 -   sass/scss
--   webpack
+-   eslint/prettier
+-   husky (pre-commit hooks)
 
 ## Quick Setup
 
