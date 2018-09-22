@@ -2,7 +2,7 @@
 
 ## You're gonna need a simple react boilerplate to begin your next project.
 
-A solid yet simple ReactJS boilerplate. This includes repo offers a perfect starting point for tooling a basic UI project.
+A solid yet simple ReactJS boilerplate. This repository offers a strong starting point for tooling a basic UI project.
 
 Inspired by [`simple-react-boilerplate`](https://github.com/AbeEstrada/simple-react-boilerplate).
 
