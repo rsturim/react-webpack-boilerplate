@@ -4,7 +4,7 @@
 
 A solid yet simple ReactJS boilerplate. This repository offers a strong starting point for tooling a basic UI project.
 
-Inspired by [`simple-react-boilerplate`](https://github.com/AbeEstrada/simple-react-boilerplate).
+Inspired by [`simple-webpacreact-boilerplate`](https://github.com/AbeEstrada/simple-react-boilerplate).
 
 ## Features
 
@@ -20,7 +20,7 @@ Inspired by [`simple-react-boilerplate`](https://github.com/AbeEstrada/simple-re
 ## Quick Setup
 
 ```bash
-git clone https://github.com/rsturim/react-boilerplate
+git clone https://github.com/rsturim/react-webpack-boilerplate
 
 cd react-boilerplate
 
