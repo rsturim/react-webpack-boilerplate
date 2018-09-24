@@ -1,4 +1,4 @@
-# Simple React Boilerplate
+# React Webpack Boilerplate
 
 ## You're gonna need a simple react boilerplate to begin your next project.
 
@@ -20,7 +20,7 @@ Inspired by [`simple-react-boilerplate`](https://github.com/AbeEstrada/simple-re
 ## Quick Setup
 
 ```bash
-git clone https://github.com/rsturim/react-boilerplate
+git clone https://github.com/rsturim/react-webpack-boilerplate
 
 cd react-boilerplate
 

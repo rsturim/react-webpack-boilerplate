@@ -1,10 +1,14 @@
 {
-    "name": "my-react-boilerplate",
+    "name": "react-webpack-boilerplate",
     "author": "Rich Sturim",
     "license": "MIT",
     "version": "1.0.0",
-    "description": "Simple React Boilerplate",
+    "description": "React Webpack Boilerplate",
     "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rsturim/react-webpack-boilerplate"
+    },
     "scripts": {
         "start": "webpack-dev-server --hot --inline --config webpack.dev.js",
         "build": "webpack --config webpack.prod.js  --progress --profile --colors",
