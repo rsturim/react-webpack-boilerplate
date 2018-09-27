@@ -20,8 +20,13 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                exclude: ['node_modules'],
-                use: [{ loader: 'babel-loader' }],
+                exclude: [/node_modules/],
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: { babelrc: true },
+                    },
+                ],
             },
             {
                 test: /\.s(a|c)ss$/,
